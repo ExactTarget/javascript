@@ -521,9 +521,6 @@
     if (test)
       return false;
 
-    // good (only for very simple statements and early function return)
-    if (test) return false;
-
     // good
     if (test) {
       return false;
@@ -536,6 +533,9 @@
     function () {
       return false;
     }
+
+    // acceptable (only for very simple statements and early function return)
+    if (test) return false;
     ```
 
     **[[⬆]](#TOC)**
