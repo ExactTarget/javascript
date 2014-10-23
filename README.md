@@ -95,7 +95,7 @@
 
     // good
     var superman = {
-      klass: 'superhero',
+      cssClass: 'superhero',
       defaults: { clark: 'kent' },
       hidden: true
     };
