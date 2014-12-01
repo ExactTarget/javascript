@@ -1,0 +1,19 @@
+{
+    // Format the file when saved
+    "format_on_save": true,
+
+    // EsFormatter specific options
+    // default are specified here https://github.com/millermedeiros/esformatter/blob/master/lib/preset/default.json
+    "format_options" : {
+
+        "indent": {
+            "value": "\t",
+        },
+        "whiteSpace": {
+            "after": {
+                "FunctionReservedWord": 1,
+                "FunctionName": 0,
+            }
+        }
+    }
+}
