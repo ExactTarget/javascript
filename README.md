@@ -30,6 +30,7 @@
   1. [ES5 Compatibility](#es5)
   1. [Testing](#testing)
   1. [Performance](#performance)
+  1. [Editorconfig Setup / Use](#editorconfig)
   1. [Resources](#resources)
   1. [In the Wild](#in-the-wild)
   1. [The JavaScript Style Guide Guide](#guide-guide)
@@ -1193,6 +1194,22 @@
   - [innerHTML vs textContent for script text](http://jsperf.com/innerhtml-vs-textcontent-for-script-text)
   - [Long String Concatenation](http://jsperf.com/ya-string-concat)
   - Loading...
+
+  **[[⬆]](#TOC)**
+  
+## <a name='editorconfig'>Editorconfig Setup / Use</a>
+  - Usually for a project with more than one developer involved, it is essentially important for the project to define 
+  and maintain a consistent coding style. Most code editors and IDEs, such as Vim, Emacs, Code::Blocks, provide settings 
+  related to coding styles, such as the width of tab, the size of indentation, end of line, etc. However, it is hard to 
+  provide the same settings for different Editors and IDEs: we have to maintain many config files for different editors 
+  and IDEs, such as .vimrc for Vim, .emacs for Emacs. In order to solve this, EditorConfig was born. By defining coding 
+  style in files named .editorconfig, the EditorConfig plugins for different editors and IDEs will automatically adjust 
+  your coding style.
+  - To use EditorConfig, you have to download the corresponding [EditorConfig plugins](http://editorconfig.org/#download) for your Editor or IDE. 
+  Follow the installation instructions to install them. 
+  - The "base" .editorconfig file goes in the root directory. You can have other config files in specific folders if wanted.
+  The only difference would be at the top of the file to remove <code>root = true</code> from any file that isn't the root.
+  
 
   **[[⬆]](#TOC)**
 
