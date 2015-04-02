@@ -16,7 +16,7 @@
         "preset": "default",
 
         "indent": {
-            "value": "  ",
+            "value": "	",
             "ArrayExpression": 1,
             "AssignmentExpression": 1,
             "BinaryExpression": 1,
