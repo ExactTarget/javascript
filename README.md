@@ -202,7 +202,7 @@
 
     ```javascript
     // anonymous function as event handler
-    $el.on('click', function() {
+    $el.on('click', function () {
       return true;
     });
 
@@ -217,7 +217,7 @@
     };
 
     // immediately-invoked function expression (IIFE)
-    (function() {
+    (function () {
       console.log('Welcome to the Internet. Please follow me.');
     })();
     ```
@@ -354,7 +354,7 @@
 
     ```javascript
     // bad
-    function() {
+    function () {
       test();
       console.log('doing stuff..');
 
@@ -370,7 +370,7 @@
     }
 
     // good
-    function() {
+    function () {
       var name = getName();
 
       test();
@@ -386,7 +386,7 @@
     }
 
     // bad - unnecessary function call
-    function() {
+    function () {
       var name = getName();
 
       if (!arguments.length) {
@@ -399,7 +399,7 @@
     }
 
     // good
-    function() {
+    function () {
       var name;
 
       if (!arguments.length) {
@@ -572,10 +572,10 @@
     }
 
     // bad
-    function() { return false; }
+    function () { return false; }
 
     // good
-    function() {
+    function () {
       return false;
     }
     ```
@@ -705,17 +705,17 @@
 
     ```javascript
     // bad
-    function() {
+    function () {
     ∙∙var name;
     }
 
     // bad
-    function() {
+    function () {
     ∙∙∙∙var name;
     }
 
   	// good
-  	function() {
+  	function () {
   		var name;
   	}
     ```
@@ -767,6 +767,20 @@
     // good
     function fight() {
       console.log('Swooosh!');
+    }
+    ```
+
+  - Place 1 space before anonymous function parenthesis.
+
+    ```javascript
+    // bad
+    function() {
+        var name;
+    }
+
+    // good
+    function () {
+        var name;
     }
     ```
 
@@ -910,19 +924,19 @@
 
     ```javascript
     // bad
-    (function() {
+    (function () {
       var name = 'Skywalker'
       return name
     })()
 
     // good
-    (function() {
+    (function () {
       var name = 'Skywalker';
       return name;
     })();
 
     // good (guards against the function becoming an argument when two files with IIFEs are concatenated)
-    ;(function() {
+    ;(function () {
       var name = 'Skywalker';
       return name;
     })();
@@ -1089,25 +1103,25 @@
 
     ```javascript
     // bad
-    function() {
+    function () {
       var that = this;
-      return function() {
+      return function () {
         console.log(that);
       };
     }
 
     // bad
-    function() {
+    function () {
       var _this = this;
-      return function() {
+      return function () {
         console.log(_this);
       };
     }
 
     // good
-    function() {
+    function () {
       var self = this;
-      return function() {
+      return function () {
         console.log(self);
       };
     }
@@ -1355,7 +1369,7 @@
   - **Yup.**
 
     ```javascript
-    function() {
+    function () {
       return true;
     }
     ```
