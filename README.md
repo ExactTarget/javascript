@@ -774,7 +774,7 @@
 
     ```javascript
     // bad
-    function () {
+    function() {
         var name;
     }
 
