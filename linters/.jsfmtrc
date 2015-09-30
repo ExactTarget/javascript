@@ -39,7 +39,7 @@
 			"before": {
 				"EndOfFile": 2,
 				"FunctionExpression": 0,
-				"FunctionExpressionClosingBrace": 1,
+				"FunctionExpressionClosingBrace": 0,
 				"ObjectExpressionClosingBrace": 1
 			},
 			"after": {
@@ -47,11 +47,11 @@
 				"FunctionDeclarationOpeningBrace": 1,
 				"IfStatement": 1,
 				"IfStatementOpeningBrace": 1,
-				"IfStatementClosingBrace": 2,
+				"IfStatementClosingBrace": -1,//Don't apply this rule, it puts a blank line padding between closing braces in nested ifs
 				"ElseIfStatementOpeningBrace": 1,
-				"ElseIfStatementClosingBrace": 2,
+				"ElseIfStatementClosingBrace": -1,
 				"ElseStatementOpeningBrace": 1,
-				"ElseStatementClosingBrace": 2
+				"ElseStatementClosingBrace": -1
 			}
 		},
 		"plugins": [
@@ -59,9 +59,7 @@
 			"esformatter-semicolons",
 			"esformatter-braces",
 			"esformatter-dot-notation",
-			"esformatter-spaced-lined-comment",
-			"esformatter-var-each",
-			"esformatter-jsx-ignore"
+			"esformatter-spaced-lined-comment"
 		]
 	}
 }
