@@ -1,6 +1,17 @@
 {
-    "preset": "airbnb",
-    "validateLineBreaks": null,
-    "disallowQuotedKeysInObjects": "allButReserved",
-    "validateIndentation": "\t"
+	"preset": "airbnb",
+	"disallowTabs": false,
+	"validateLineBreaks": null,
+	"validateIndentation": "\t",
+	"disallowTrailingComma": true,
+	"disallowTrailingWhitespace": "ignoreEmptyLines",
+	"requireSpacesInAnonymousFunctionExpression": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"requireSpacesInFunction": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"disallowQuotedKeysInObjects": "allButReserved",
 }
