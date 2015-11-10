@@ -1,4 +1,4 @@
-# ExactTarget JavaScript Style Guide
+# SalesForce Marketing Cloud JavaScript Style Guide
 
 *A mostly reasonable approach to JavaScript*
 
@@ -1507,7 +1507,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
-Copyright (c) 2014 ExactTarget, Inc.
+Copyright (c) 2015 salesforce.com, inc.
 
 All rights reserved.
 
