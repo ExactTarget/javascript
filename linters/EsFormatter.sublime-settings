@@ -5,11 +5,34 @@
     // EsFormatter specific options
     // default are specified here https://github.com/millermedeiros/esformatter/blob/master/lib/preset/default.json
     "format_options" : {
-
         "indent": {
-            "value": "	",
+            "value": "\t",
             "BinaryExpression": 1,
-            "ConditionalExpression": 1,
+            "ConditionalExpression": 1
+        },
+        "quotes": {
+            "type": "single",
+            "avoidEscape": true
+        },
+        "whiteSpace": {
+            "value": " ",
+            "removeTrailing": 1,
+            "before": {
+                "ArgumentListArrayExpression": 0,
+                "ArgumentListFunctionExpression": 0,
+                "ArgumentListObjectExpression": 0,
+                "BlockComment": 0,
+                "IfStatementClosingBrace": 1,
+                "IfStatementConditionalClosing": 0,
+                "IfStatementOpeningBrace": 1
+            },
+            "after": {
+                "ArgumentListArrayExpression": 0,
+                "ArgumentListFunctionExpression": 0,
+                "ArgumentListObjectExpression": 0,
+                "FunctionReservedWord": 1,
+                "FunctionName" : 1
+            }
         },
         "lineBreak": {
             "value": "\n",
@@ -31,25 +54,15 @@
                 "ElseStatementClosingBrace": 2
             }
         },
-        "whiteSpace": {
-            "value": " ",
-            "removeTrailing": 1,
-            "before": {
-                "ArgumentListArrayExpression": 0,
-                "ArgumentListFunctionExpression": 0,
-                "ArgumentListObjectExpression": 0,
-                "BlockComment": 0,
-                "IfStatementClosingBrace": 0,
-                "LineComment": 0
-            },
-            "after": {
-                "ArgumentListArrayExpression": 0,
-                "ArgumentListFunctionExpression": 0,
-                "ArgumentListObjectExpression": 0,
-                "CallExpression": 0,
-                "FunctionReservedWord": 1,
-            }
-        }
+        "plugins": [
+            "esformatter-quotes",
+            "esformatter-semicolons",
+            "esformatter-braces",
+            "esformatter-dot-notation",
+            "esformatter-spaced-lined-comment",
+            "esformatter-var-each",
+            "esformatter-jsx-ignore"
+        ]
     }
 
 }

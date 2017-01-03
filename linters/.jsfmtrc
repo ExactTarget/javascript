@@ -1,0 +1,65 @@
+{
+	"autoformat": true,
+	"extensions":
+	[
+		"js"
+	],
+	"options": {
+		"indent": {
+			"value": "\t",
+			"BinaryExpression": 1,
+			"ConditionalExpression": 1
+		},
+		"quotes": {
+			"type": "single",
+			"avoidEscape": true
+		},
+		"whiteSpace": {
+			"value": " ",
+			"removeTrailing": 1,
+			"before": {
+				"ArgumentListArrayExpression": 0,
+				"ArgumentListFunctionExpression": 0,
+				"ArgumentListObjectExpression": 0,
+				"BlockComment": 0,
+				"IfStatementClosingBrace": 1,
+				"IfStatementConditionalClosing": 0,
+				"IfStatementOpeningBrace": 1
+			},
+			"after": {
+				"ArgumentListArrayExpression": 0,
+				"ArgumentListFunctionExpression": 0,
+				"ArgumentListObjectExpression": 0,
+				"FunctionReservedWord": 1,
+				"FunctionName" : 1
+			}
+		},
+		"lineBreak": {
+			"value": "\n",
+			"before": {
+				"EndOfFile": 2,
+				"FunctionExpression": 0,
+				"FunctionExpressionClosingBrace": 1,
+				"ObjectExpressionClosingBrace": 1
+			},
+			"after": {
+				"FunctionExpressionOpeningBrace": 1,
+				"FunctionDeclarationOpeningBrace": 1,
+				"IfStatement": 1,
+				"IfStatementOpeningBrace": 1,
+				"IfStatementClosingBrace": -1,//Don't apply this rule
+				"ElseIfStatementOpeningBrace": 1,
+				"ElseIfStatementClosingBrace": -1,
+				"ElseStatementOpeningBrace": 1,
+				"ElseStatementClosingBrace": -1
+			}
+		},
+		"plugins": [
+			"esformatter-quotes",
+			"esformatter-semicolons",
+			"esformatter-braces",
+			"esformatter-dot-notation",
+			"esformatter-spaced-lined-comment"
+		]
+	}
+}
